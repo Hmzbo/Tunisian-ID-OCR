@@ -24,10 +24,9 @@ from MyUtils import preprocess, clean_sort_results
 os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 
 # Loading CIN classification pretrained model
-@st.cache
-def load_mobnet_model():
-    mobnet_model = load_model('./EffNetB0_CIN.h5')
-    return mobnet_model
+def load_effnet_model():
+    effnet_model = load_model('./EffNetB0_CIN.h5')
+    return effnet_model
 
 # Funtion that interprets prediction results
 def is_cin(pred):
