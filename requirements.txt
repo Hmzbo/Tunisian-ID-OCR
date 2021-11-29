@@ -13,3 +13,4 @@ arabic_reshaper
 easyocr
 h5py
 pandas
+seaborn
