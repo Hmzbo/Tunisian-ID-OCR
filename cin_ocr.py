@@ -38,7 +38,7 @@ def show_cin_ocr_page():
     st.header('Tunisian ID card OCR service')
     files = st.file_uploader('Upload ID card image(s)', accept_multiple_files=True, type=['png','jpeg','jpg'])
     if files != None:
-        mobnet_model = load_mobnet_model()
+        mobnet_model = load_effnet_model()
         imgs_num = len(files)
         if imgs_num == 1:
             image = Image.open(files[0])
